@@ -15,6 +15,8 @@ public class HooksClass {
 	@Before
 	public void startBrowser(Scenario scenario) {
 		base.browserLaunch();
+		final byte[] by = ((TakesScreenshot)base.driver).getScreenshotAs(OutputType.BYTES);
+		   scenario.embed(by, "image/png");
 	
 	}
 	

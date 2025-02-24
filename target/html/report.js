@@ -9,6 +9,7 @@ formatter.background({
   "description": "",
   "keyword": "Background"
 });
+formatter.embedding("image/png", "embedded0.png", null);
 formatter.before({
   "status": "passed"
 });
@@ -81,7 +82,7 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
-formatter.embedding("image/png", "embedded0.png", null);
+formatter.embedding("image/png", "embedded1.png", null);
 formatter.after({
   "status": "passed"
 });
@@ -90,6 +91,7 @@ formatter.background({
   "description": "",
   "keyword": "Background"
 });
+formatter.embedding("image/png", "embedded2.png", null);
 formatter.before({
   "status": "passed"
 });
@@ -148,7 +150,7 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
-formatter.embedding("image/png", "embedded1.png", null);
+formatter.embedding("image/png", "embedded3.png", null);
 formatter.after({
   "status": "passed"
 });
@@ -253,6 +255,7 @@ formatter.background({
   "description": "",
   "keyword": "Background"
 });
+formatter.embedding("image/png", "embedded4.png", null);
 formatter.before({
   "status": "passed"
 });
@@ -431,7 +434,7 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
-formatter.embedding("image/png", "embedded2.png", null);
+formatter.embedding("image/png", "embedded5.png", null);
 formatter.after({
   "status": "passed"
 });

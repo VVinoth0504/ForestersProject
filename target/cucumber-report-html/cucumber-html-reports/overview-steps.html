@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/moment.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber Reports (no 2.0) - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="overview-steps.html">Steps</a></li>
+                <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+    
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+              <th>Number</th>
+            <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>Com.ForestersFinancial.Us</td>
+              <td>2.0</td>
+            <td>24 Feb 2025, 15:08</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+      </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Steps Statistics</h2>
+          <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+      </div>
+</div>
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table id="tablesorter" class="stats-table table-hover">
+
+        <thead>
+          <tr class="header">
+            <th>Implementation</th>
+            <th>Occurrences</th>
+            <th>Average duration</th>
+            <th>Max duration</th>
+            <th>Total durations</th>
+            <th>Ratio</th>
+          </tr>
+        </thead>
+
+        <tbody>
+                      <tr>
+              <td class="location">Stepdefinition.ForestersLifeInsurance.launch_the_foresters_application(java.lang.String)</td>
+              <td>3</td>
+              <td class="duration" data-value="41272247166">41.272</td>
+              <td class="duration" data-value="41272247166">1:12.054</td>
+              <td class="duration" data-value="123816741500">2:3.816</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Stepdefinition.ForestersLifeInsurance.user_click_Login()</td>
+              <td>1</td>
+              <td class="duration" data-value="175746400">0.175</td>
+              <td class="duration" data-value="175746400">0.175</td>
+              <td class="duration" data-value="175746400">0.175</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Stepdefinition.ForestersLifeInsurance.user_click_agree_check_box()</td>
+              <td>1</td>
+              <td class="duration" data-value="448363000">0.448</td>
+              <td class="duration" data-value="448363000">0.448</td>
+              <td class="duration" data-value="448363000">0.448</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Stepdefinition.ForestersLifeInsurance.user_click_contactUs()</td>
+              <td>1</td>
+              <td class="duration" data-value="10639605000">10.639</td>
+              <td class="duration" data-value="10639605000">10.639</td>
+              <td class="duration" data-value="10639605000">10.639</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Stepdefinition.ForestersLifeInsurance.user_click_contact_us()</td>
+              <td>1</td>
+              <td class="duration" data-value="40224992400">40.224</td>
+              <td class="duration" data-value="40224992400">40.224</td>
+              <td class="duration" data-value="40224992400">40.224</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Stepdefinition.ForestersLifeInsurance.user_click_login()</td>
+              <td>1</td>
+              <td class="duration" data-value="1642692900">1.642</td>
+              <td class="duration" data-value="1642692900">1.642</td>
+              <td class="duration" data-value="1642692900">1.642</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Stepdefinition.ForestersLifeInsurance.user_click_submit_button()</td>
+              <td>1</td>
+              <td class="duration" data-value="451140900">0.451</td>
+              <td class="duration" data-value="451140900">0.451</td>
+              <td class="duration" data-value="451140900">0.451</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Stepdefinition.ForestersLifeInsurance.user_clicked_on_Myforesters()</td>
+              <td>1</td>
+              <td class="duration" data-value="289587200">0.289</td>
+              <td class="duration" data-value="289587200">0.289</td>
+              <td class="duration" data-value="289587200">0.289</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Stepdefinition.ForestersLifeInsurance.user_enter_details_in_additional_information(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="352422100">0.352</td>
+              <td class="duration" data-value="352422100">0.352</td>
+              <td class="duration" data-value="352422100">0.352</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Stepdefinition.ForestersLifeInsurance.user_pass_LastName(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="295402900">0.295</td>
+              <td class="duration" data-value="295402900">0.295</td>
+              <td class="duration" data-value="295402900">0.295</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Stepdefinition.ForestersLifeInsurance.user_pass_emailId(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="332790700">0.332</td>
+              <td class="duration" data-value="332790700">0.332</td>
+              <td class="duration" data-value="332790700">0.332</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Stepdefinition.ForestersLifeInsurance.user_pass_existing_policy_or_certificate_number(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="313883600">0.313</td>
+              <td class="duration" data-value="313883600">0.313</td>
+              <td class="duration" data-value="313883600">0.313</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Stepdefinition.ForestersLifeInsurance.user_pass_extn(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="277339200">0.277</td>
+              <td class="duration" data-value="277339200">0.277</td>
+              <td class="duration" data-value="277339200">0.277</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Stepdefinition.ForestersLifeInsurance.user_pass_firstName(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="267682500">0.267</td>
+              <td class="duration" data-value="267682500">0.267</td>
+              <td class="duration" data-value="267682500">0.267</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Stepdefinition.ForestersLifeInsurance.user_pass_phoneNumber(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="258549400">0.258</td>
+              <td class="duration" data-value="258549400">0.258</td>
+              <td class="duration" data-value="258549400">0.258</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Stepdefinition.ForestersLifeInsurance.user_pass_the_username_and_password_with_onedim_map(io.cucumber.datatable.DataTable)</td>
+              <td>1</td>
+              <td class="duration" data-value="12474291100">12.474</td>
+              <td class="duration" data-value="12474291100">12.474</td>
+              <td class="duration" data-value="12474291100">12.474</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Stepdefinition.ForestersLifeInsurance.user_pass_zipcode(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="267387500">0.267</td>
+              <td class="duration" data-value="267387500">0.267</td>
+              <td class="duration" data-value="267387500">0.267</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Stepdefinition.ForestersLifeInsurance.user_scroll_down_the_page()</td>
+              <td>1</td>
+              <td class="duration" data-value="91614400">0.091</td>
+              <td class="duration" data-value="91614400">0.091</td>
+              <td class="duration" data-value="91614400">0.091</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Stepdefinition.ForestersLifeInsurance.user_select_contact_preference()</td>
+              <td>1</td>
+              <td class="duration" data-value="279124900">0.279</td>
+              <td class="duration" data-value="279124900">0.279</td>
+              <td class="duration" data-value="279124900">0.279</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Stepdefinition.ForestersLifeInsurance.user_select_option_in_how_can_we_help()</td>
+              <td>1</td>
+              <td class="duration" data-value="1096017000">1.096</td>
+              <td class="duration" data-value="1096017000">1.096</td>
+              <td class="duration" data-value="1096017000">1.096</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Stepdefinition.ForestersLifeInsurance.user_select_option_in_subject()</td>
+              <td>1</td>
+              <td class="duration" data-value="1046089400">1.046</td>
+              <td class="duration" data-value="1046089400">1.046</td>
+              <td class="duration" data-value="1046089400">1.046</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Stepdefinition.ForestersLifeInsurance.user_takes_screenshot_of_confirmation_message()</td>
+              <td>1</td>
+              <td class="duration" data-value="2201363000">2.201</td>
+              <td class="duration" data-value="2201363000">2.201</td>
+              <td class="duration" data-value="2201363000">2.201</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Stepdefinition.ForestersLifeInsurance.user_validate_the_contactUs_text(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="79990100">0.079</td>
+              <td class="duration" data-value="79990100">0.079</td>
+              <td class="duration" data-value="79990100">0.079</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Stepdefinition.ForestersLifeInsurance.validate_the_homepage(java.lang.String)</td>
+              <td>3</td>
+              <td class="duration" data-value="17527700">0.017</td>
+              <td class="duration" data-value="17527700">0.020</td>
+              <td class="duration" data-value="52583100">0.052</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Stepdefinition.HooksClass.endBrowser(io.cucumber.java.Scenario)</td>
+              <td>3</td>
+              <td class="duration" data-value="304003433">0.304</td>
+              <td class="duration" data-value="304003433">0.374</td>
+              <td class="duration" data-value="912010300">0.912</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Stepdefinition.HooksClass.startBrowser(io.cucumber.java.Scenario)</td>
+              <td>3</td>
+              <td class="duration" data-value="5873878200">5.873</td>
+              <td class="duration" data-value="5873878200">7.856</td>
+              <td class="duration" data-value="17621634600">17.621</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                  </tbody>
+
+        <tfoot class="total">
+          <tr>
+            <td>26</td>
+            <td>34</td>
+            <td class="duration">6.350</td>
+            <td class="duration">2:3.816</td>
+            <td class="duration">3:35.909</td>
+            <td>Totals</td>
+          </tr>
+        </tfoot>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

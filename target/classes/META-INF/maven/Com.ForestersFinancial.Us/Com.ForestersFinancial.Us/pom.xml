@@ -51,7 +51,7 @@
 <projectName>Com.ForestersFinancial.Us</projectName>
 <outputDirectory>${project.build.directory}/cucumber-report-html</outputDirectory>
 <jsonFiles>
-<param>${project.build.directory}/reports.json</param>
+<param>${project.build.directory}/report.json</param>
 </jsonFiles>
 <enableFlashCharts>true</enableFlashCharts>
 <buildNumber>2.0</buildNumber>

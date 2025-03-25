@@ -1,6 +1,6 @@
 TestRunner\Testrunner.class
-ObjectRepository\ForesterLocators.class
 BaseClass\IUtility.class
 BaseClass\IBaseClass.class
+ObjectRepository\ForesterLocators.class
 Stepdefinition\ForestersLifeInsurance.class
 Stepdefinition\HooksClass.class

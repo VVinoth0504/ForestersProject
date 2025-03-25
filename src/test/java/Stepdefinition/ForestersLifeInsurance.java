@@ -230,7 +230,196 @@ public class ForestersLifeInsurance {
 	public void user_takes_screenshot_of_confirmation_message() {
 	 base.ElementToPresent(locators.getConfirmmess());
 	 base.scrolldown(locators.getConfirmmess());
+	 base.getText(locators.getConfirmmess());
 	 base.ss("cofimation message");
+	}
+	
+
+
+    @When("user click country icon")
+    public void user_click_country_icon() {
+    	base.ElementToClickable(locators.getCountryop());
+    	base.button(locators.getCountryop());
+    
+   }
+  
+	@When("user click canada:english")
+	public void user_click_canada_english() {
+		base.ElementToClickable(locators.getCaneng());
+		base.button(locators.getCaneng());
+		base.button(locators.getContin());
+	    
+	}
+
+	@Then("user verify page canada:english")
+	public void user_verify_page_canada_english() {
+		base.title();
+		base.ss("canada english homepage");
+	   
+	}
+	
+	@When("user click country icon second time")
+	public void user_click_country_icon_second_time() {
+		base.ElementToClickable(locators.getCountryop());
+    	base.button(locators.getCountryop());
+	    
+	}
+
+	@When("user click canada:francais")
+	public void user_click_canada_francais() {
+		base.ElementToClickable(locators.getCanfran());
+		base.button(locators.getCanfran());
+	    
+	}
+
+	@Then("user verify page canada:francais")
+	public void user_verify_page_canada_francais() {
+		base.title();
+		base.ss("canada francais homepage"); 
+	}
+	
+	@When("user click country icon third time")
+	public void user_click_country_icon_third_time() {
+		base.ElementToClickable(locators.getCountryop());
+    	base.button(locators.getCountryop());
+	    
+	}	
+
+	@When("user click unitedKingdom")
+	public void user_click_unitedKingdom() {
+		base.ElementToClickable(locators.getUk());
+		base.button(locators.getUk());
+	    
+	}
+
+	@Then("user verify page unitedKingdom")
+	public void user_verify_page_unitedKingdom() {
+		base.title();
+		base.ss("uk homepage");
+	}
+	
+	@When("user click country icon fourth time")
+	public void user_click_country_icon_fourth_time() {
+		base.ElementToClickable(locators.getCountryop());
+    	base.button(locators.getCountryop()); 
+	}
+
+	@When("user click unitedStates")
+	public void user_click_unitedStates() {
+		base.ElementToClickable(locators.getUs());
+		base.button(locators.getUs());
+	}
+
+	@Then("user verify page unitedStates")
+	public void user_verify_page_unitedStates() {
+		base.title();
+		base.ss("US homepage");  
+	}
+	
+	@When("user click member benefit")
+	public void user_click_member_benefit() {
+		base.button(locators.getMemberBenefit());
+	   
+	}
+
+	@When("user select myForesters app")
+	public void user_select_myForesters_app() {
+		base.mouseOver(locators.getMyForestersApp());
+		base.button(locators.getMyForestersApp());
+	   
+	}
+
+	@When("user scrollDown the page click forAgents")
+	public void user_scrollDown_the_page_click_forAgents() {
+		base.scrolldown(locators.getForAgents());
+		base.button(locators.getForAgents());
+	   
+	}
+	
+	@When("user pass firstname {string}")
+	public void user_pass_firstname(String string) {
+	   base.scrolldown(locators.getForAgentfirstName());
+	   base.sendText(locators.getForAgentfirstName(), string);
+	}
+
+	@When("user pass lastName {string}")
+	public void user_pass_lastName(String string) {
+		base.scrolldown(locators.getForAgentLasttName());
+		base.sendText(locators.getForAgentLasttName(), string);
+	    
+	}
+
+	@When("user pass phNumber {string}")
+	public void user_pass_phNumber(String string) {
+		base.mouseOver(locators.getForAgentPhone());
+		base.sendText(locators.getForAgentPhone(), string);
+	    
+	}
+
+	@When("user pass extension {string}")
+	public void user_pass_extension(String string) {
+		base.mouseOver(locators.getForAgentExt());
+	    base.sendText(locators.getForAgentExt(), string);
+	}
+	
+	@When("user pass emailid {string}")
+	public void user_pass_emailid(String string) {
+	    base.mouseOver(locators.getForAgentEmailId());
+	    base.sendText(locators.getForAgentEmailId(), string);
+	}
+
+	@When("user pass comName {string}")
+	public void user_pass_comName(String string) {
+		base.mouseOver(locators.getForAgentcompany());
+		base.sendText(locators.getForAgentcompany(), string);
+	    
+	}
+
+	@When("user pass city {string}")
+	public void user_pass_city(String string) {
+		base.mouseOver(locators.getForAgentcity());
+		base.sendText(locators.getForAgentcity(), string);
+	    
+	}
+
+	@When("user select state")
+	public void user_select_state() {
+		base.mouseOver(locators.getForAgentstate());
+		base.ElementToClickable(locators.getForAgentstate());
+		base.SelectByIndex(locators.getForAgentstate(), 10);
+		base.getAllSelectedoption(null, locators.getForAgentstate());
+	   
+	}
+
+	@When("user select Product you are interested in")
+	public void user_select_Product_you_are_interested_in() {
+		base.mouseOver(locators.getForAgentproduct());
+		base.ElementToClickable(locators.getForAgentproduct());
+		base.SelectByIndex(locators.getForAgentproduct(), 2);
+		base.getAllSelectedoption(null, locators.getForAgentproduct());
+	   
+	}
+
+	@When("user enter content in {string}")
+	public void user_enter_content_in(String string) {
+		base.mouseOver(locators.getForAgentothers());
+		base.sendText(locators.getForAgentothers(), string);
+	    
+	}
+
+	@When("user click contactMe")
+	public void user_click_contactMe() {
+		base.mouseOver(locators.getForAgentContactMe());
+		base.button(locators.getForAgentContactMe());
+	   
+	}
+	
+	@Then("user validate confirmationMessage")
+	public void user_validate_confirmationMessage() {
+		base.ElementToPresent(locators.getForAgentconMsg());
+	    base.mouseOver(locators.getForAgentconMsg());
+	    base.getText(locators.getForAgentconMsg());
+	    base.ss("forAgentConMsg");
 	}
 
 

@@ -438,4 +438,446 @@ formatter.embedding("image/png", "embedded5.png", null);
 formatter.after({
   "status": "passed"
 });
+formatter.background({
+  "name": "Open Foresters website",
+  "description": "",
+  "keyword": "Background"
+});
+formatter.embedding("image/png", "embedded6.png", null);
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Launch the foresters application \"https://www.foresters.com/\"",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "Stepdefinition.ForestersLifeInsurance.launch_the_foresters_application(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Validate the homepage  \"https://www.foresters.com/\"",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "Stepdefinition.ForestersLifeInsurance.validate_the_homepage(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "User verifing country icon changing or not",
+  "description": "",
+  "keyword": "Scenario"
+});
+formatter.step({
+  "name": "user click country icon",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "Stepdefinition.ForestersLifeInsurance.user_click_country_icon()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user click canada:english",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "Stepdefinition.ForestersLifeInsurance.user_click_canada_english()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user verify page canada:english",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "Stepdefinition.ForestersLifeInsurance.user_verify_page_canada_english()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user click country icon second time",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "Stepdefinition.ForestersLifeInsurance.user_click_country_icon_second_time()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user click canada:francais",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "Stepdefinition.ForestersLifeInsurance.user_click_canada_francais()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user verify page canada:francais",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "Stepdefinition.ForestersLifeInsurance.user_verify_page_canada_francais()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user click country icon third time",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "Stepdefinition.ForestersLifeInsurance.user_click_country_icon_third_time()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user click unitedKingdom",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "Stepdefinition.ForestersLifeInsurance.user_click_unitedKingdom()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user verify page unitedKingdom",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "Stepdefinition.ForestersLifeInsurance.user_verify_page_unitedKingdom()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user click country icon fourth time",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "Stepdefinition.ForestersLifeInsurance.user_click_country_icon_fourth_time()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user click unitedStates",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "Stepdefinition.ForestersLifeInsurance.user_click_unitedStates()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user verify page unitedStates",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "Stepdefinition.ForestersLifeInsurance.user_verify_page_unitedStates()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.embedding("image/png", "embedded7.png", null);
+formatter.after({
+  "status": "passed"
+});
+formatter.scenarioOutline({
+  "name": "Get started with Foresters Financial for agents contact me",
+  "description": "",
+  "keyword": "Scenario Outline"
+});
+formatter.step({
+  "name": "user click member benefit",
+  "keyword": "When "
+});
+formatter.step({
+  "name": "user select myForesters app",
+  "keyword": "And "
+});
+formatter.step({
+  "name": "user scrollDown the page click forAgents",
+  "keyword": "And "
+});
+formatter.step({
+  "name": "user pass firstname \"\u003cfirstname\u003e\"",
+  "keyword": "And "
+});
+formatter.step({
+  "name": "user pass lastName \"\u003clastName\u003e\"",
+  "keyword": "And "
+});
+formatter.step({
+  "name": "user pass phNumber \"\u003cphone\u003e\"",
+  "keyword": "And "
+});
+formatter.step({
+  "name": "user pass extension \"\u003cExt\u003e\"",
+  "keyword": "And "
+});
+formatter.step({
+  "name": "user pass emailid \"\u003cemailid\u003e\"",
+  "keyword": "And "
+});
+formatter.step({
+  "name": "user pass comName \"\u003ccompany\u003e\"",
+  "keyword": "And "
+});
+formatter.step({
+  "name": "user pass city \"\u003ccity\u003e\"",
+  "keyword": "And "
+});
+formatter.step({
+  "name": "user select state",
+  "keyword": "And "
+});
+formatter.step({
+  "name": "user select Product you are interested in",
+  "keyword": "And "
+});
+formatter.step({
+  "name": "user enter content in \"\u003cother\u003e\"",
+  "keyword": "And "
+});
+formatter.step({
+  "name": "user click contactMe",
+  "keyword": "And "
+});
+formatter.step({
+  "name": "user validate confirmationMessage",
+  "keyword": "Then "
+});
+formatter.examples({
+  "name": "",
+  "description": "",
+  "keyword": "Examples",
+  "rows": [
+    {
+      "cells": [
+        "firstname",
+        "lastName",
+        "phone",
+        "Ext",
+        "emailid",
+        "company",
+        "city",
+        "other"
+      ]
+    },
+    {
+      "cells": [
+        "vinoth",
+        "vicky",
+        "98745463210",
+        "011",
+        "vvinoth@gmail.com",
+        "abcpvtltd",
+        "miami",
+        "i need a term life insurance 123 @"
+      ]
+    }
+  ]
+});
+formatter.background({
+  "name": "Open Foresters website",
+  "description": "",
+  "keyword": "Background"
+});
+formatter.embedding("image/png", "embedded8.png", null);
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Launch the foresters application \"https://www.foresters.com/\"",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "Stepdefinition.ForestersLifeInsurance.launch_the_foresters_application(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Validate the homepage  \"https://www.foresters.com/\"",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "Stepdefinition.ForestersLifeInsurance.validate_the_homepage(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Get started with Foresters Financial for agents contact me",
+  "description": "",
+  "keyword": "Scenario Outline"
+});
+formatter.step({
+  "name": "user click member benefit",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "Stepdefinition.ForestersLifeInsurance.user_click_member_benefit()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user select myForesters app",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Stepdefinition.ForestersLifeInsurance.user_select_myForesters_app()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user scrollDown the page click forAgents",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Stepdefinition.ForestersLifeInsurance.user_scrollDown_the_page_click_forAgents()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user pass firstname \"vinoth\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Stepdefinition.ForestersLifeInsurance.user_pass_firstname(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user pass lastName \"vicky\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Stepdefinition.ForestersLifeInsurance.user_pass_lastName(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user pass phNumber \"98745463210\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Stepdefinition.ForestersLifeInsurance.user_pass_phNumber(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user pass extension \"011\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Stepdefinition.ForestersLifeInsurance.user_pass_extension(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user pass emailid \"vvinoth@gmail.com\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Stepdefinition.ForestersLifeInsurance.user_pass_emailid(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user pass comName \"abcpvtltd\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Stepdefinition.ForestersLifeInsurance.user_pass_comName(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user pass city \"miami\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Stepdefinition.ForestersLifeInsurance.user_pass_city(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user select state",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Stepdefinition.ForestersLifeInsurance.user_select_state()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user select Product you are interested in",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Stepdefinition.ForestersLifeInsurance.user_select_Product_you_are_interested_in()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user enter content in \"i need a term life insurance 123 @\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Stepdefinition.ForestersLifeInsurance.user_enter_content_in(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user click contactMe",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Stepdefinition.ForestersLifeInsurance.user_click_contactMe()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user validate confirmationMessage",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "Stepdefinition.ForestersLifeInsurance.user_validate_confirmationMessage()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.embedding("image/png", "embedded9.png", null);
+formatter.after({
+  "status": "passed"
+});
 });

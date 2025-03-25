@@ -93,7 +93,7 @@ public class ForesterLocators {
 	@FindBy(xpath="//span[text()='Continue']")
 	private WebElement contin;
 	
-	@FindBy(xpath="//li/a[@class='country-option ']/span[text()='Canada: Français']")
+	@FindBy(xpath="//li/a[@class='country-option ' and @data-value='fr-ca']")
 	private WebElement canfran;
 	
 	@FindBy(xpath="//li/a[@class='country-option ']/span[text()='Royaume-Uni']")

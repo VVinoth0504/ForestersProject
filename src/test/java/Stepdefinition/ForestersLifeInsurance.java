@@ -267,6 +267,7 @@ public class ForestersLifeInsurance {
 
 	@When("user click canada:francais")
 	public void user_click_canada_francais() {
+		base.mouseOver(locators.getCanfran());
 		base.ElementToClickable(locators.getCanfran());
 		base.button(locators.getCanfran());
 	    

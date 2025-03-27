@@ -38,3 +38,39 @@ Examples:
 |Additional info|firstName|LastName|phoneNumber|Extn|Email|zipcode|policy number|
 |Nothing to give|vinoth|vicky|2547898445|044|vvinoth54@gmail.com|600051|21547885vi|
 
+Scenario: User verifing country icon changing or not
+When user click country icon
+When user click canada:english 
+Then user verify page canada:english
+When user click country icon second time
+When user click canada:francais
+Then user verify page canada:francais
+When user click country icon third time
+When user click unitedKingdom
+Then user verify page unitedKingdom
+When user click country icon fourth time
+When user click unitedStates
+Then user verify page unitedStates
+
+Scenario Outline: Get started with Foresters Financial for agents contact me
+When user click member benefit
+And user select myForesters app
+And user scrollDown the page click forAgents
+And user pass firstname "<firstname>"
+And user pass lastName "<lastName>"
+And user pass phNumber "<phone>"
+And user pass extension "<Ext>"
+And user pass emailid "<emailid>"
+And user pass comName "<company>"
+And user pass city "<city>"
+And user select state
+And user select Product you are interested in
+And user enter content in "<other>"
+And user click contactMe
+Then user validate confirmationMessage
+
+Examples:
+|firstname|lastName|phone|Ext|emailid|company|city|other|
+|vinoth|vicky|98745463210|011|vvinoth@gmail.com|abcpvtltd|miami|i need a term life insurance 123 @|
+
+

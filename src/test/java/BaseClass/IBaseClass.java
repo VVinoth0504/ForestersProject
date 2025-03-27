@@ -58,12 +58,12 @@ public class IBaseClass implements IUtility {
 
 	@Override
 	public void forward() {
-
+    driver.navigate().forward();
 	}
 
 	@Override
 	public void backward() {
-
+     driver.navigate().back();
 	}
 
 	@Override
@@ -81,7 +81,9 @@ public class IBaseClass implements IUtility {
 
 	@Override
 	public String title() {
-		return null;
+		String pagetitle = driver.getTitle();
+		System.out.println(pagetitle);
+		return pagetitle;
 
 	}
 
@@ -124,27 +126,27 @@ public class IBaseClass implements IUtility {
 
 	@Override
 	public void mouseOver(WebElement ele) {
-
+     action.moveToElement(ele).build().perform();
 	}
 
 	@Override
 	public void switchFrameusingId(String id) {
-
+      driver.switchTo().frame(id);
 	}
 
 	@Override
 	public void switchFrameusingName(String name) {
-
+       driver.switchTo().frame(name);
 	}
 
 	@Override
 	public void switchFrameusingWebElement(WebElement ele) {
-
+       driver.switchTo().frame(ele);
 	}
 
 	@Override
 	public void alertSendText(Alert a, String inputText) {
-
+        
 	}
 
 	@Override
@@ -178,7 +180,7 @@ public class IBaseClass implements IUtility {
 
 	@Override
 	public void button(WebElement ele, int x) {
-
+		js.executeScript("arguments[0].click()", ele);
 	}
 
 	@Override
@@ -236,6 +238,16 @@ public class IBaseClass implements IUtility {
 		wait.until(ExpectedConditions.visibilityOf(ele));
 		
 	}
+
+	@Override
+	public String getText(WebElement ele) {
+		String text = ele.getText();
+		System.out.println(text);
+		return text;
+		
+	}
+
+	
 
 	
 

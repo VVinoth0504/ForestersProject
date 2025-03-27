@@ -87,12 +87,231 @@ public class ForesterLocators {
 	@FindBy(xpath="//p[contains(text(),'Thank you for your submission. Please ')]")
 	private WebElement confirmmess;
 	
+	@FindBy(xpath="//li/a[@class='country-option ']/span[text()='Canada: English']")
+	private WebElement caneng;
+	
+	@FindBy(xpath="//span[text()='Continue']")
+	private WebElement contin;
+	
+	@FindBy(xpath="//li/a[@class='country-option ' and @data-value='fr-ca']")
+	private WebElement canfran;
+	
+	@FindBy(xpath="//li/a[@class='country-option ']/span[text()='Royaume-Uni']")
+	private WebElement uk;
+	
+	@FindBy(xpath="//li/a[@class='country-option ']/span[text()='United States']")
+	private WebElement us;
+	
+	@FindBy(xpath="//div[@class='country-select__trigger']/div[@aria-controls='countrySelector']")
+	private WebElement countryop;
+	
+	@FindBy(id="#menuItemFullContent3desktop")
+	private WebElement memberBenefit;
+	
+	@FindBy(xpath="//div[@class='dropdown-menu show']//ul[@class='dropdown-header list-group']/li/a[text()='MyForesters App']")
+	private WebElement MyForestersApp;
+	
+	@FindBy(xpath="//a[text()='For agents']")
+	private WebElement forAgents;
+	
+	@FindBy(xpath="//input[@data-sc-field-name='firstName']")
+	private WebElement forAgentfirstName;
+	
+	@FindBy(xpath="//input[@data-sc-field-name='lastName']")
+	private WebElement forAgentLasttName;
+	
+	@FindBy(xpath="//input[@data-sc-field-name='phone']")
+	private WebElement forAgentPhone;
+	
+	@FindBy(xpath="//input[@data-sc-field-name='Poste']")
+	private WebElement forAgentExt;
+	
+	@FindBy(xpath="//input[@data-sc-field-name='email']")
+	private WebElement forAgentEmailId;
+	
+	@FindBy(xpath="//input[@data-sc-field-name='companyName']")
+	private WebElement forAgentcompany;
+	
+	@FindBy(xpath="//input[@data-sc-field-name='Single-Line Text']")
+	private WebElement forAgentcity;
+	
+	@FindBy(xpath="//select[@data-sc-field-name='stateDropdownList']")
+	private WebElement forAgentstate;
+	
+	@FindBy(xpath="//select[@data-sc-field-name='productsDropdownList']")
+	private WebElement forAgentproduct;
+	
+	@FindBy(xpath="//textarea[@data-sc-field-name='other']")
+	private WebElement forAgentothers;
+	
+	@FindBy(xpath="//input[@value='Contact me']")
+	private WebElement forAgentContactMe;
+	
+	@FindBy(xpath="//p[text()='Thank you for the submission']")
+	private WebElement forAgentconMsg;
 	
 	
 	
 	
 	
 	
+	
+	public WebElement getForAgentconMsg() {
+		return forAgentconMsg;
+	}
+
+
+
+
+	public WebElement getCountryop() {
+		return countryop;
+	}
+
+
+
+
+	public WebElement getMemberBenefit() {
+		return memberBenefit;
+	}
+
+
+
+
+	
+	public WebElement getMyForestersApp() {
+		return MyForestersApp;
+	}
+
+
+
+
+	
+	public WebElement getForAgents() {
+		return forAgents;
+	}
+
+
+
+
+	
+	public WebElement getForAgentfirstName() {
+		return forAgentfirstName;
+	}
+
+
+
+
+	
+	public WebElement getForAgentLasttName() {
+		return forAgentLasttName;
+	}
+
+
+
+
+	
+	public WebElement getForAgentPhone() {
+		return forAgentPhone;
+	}
+
+
+
+
+	
+	public WebElement getForAgentExt() {
+		return forAgentExt;
+	}
+
+
+
+
+	
+	public WebElement getForAgentEmailId() {
+		return forAgentEmailId;
+	}
+
+
+
+
+	
+	public WebElement getForAgentcompany() {
+		return forAgentcompany;
+	}
+
+
+
+
+	
+	public WebElement getForAgentcity() {
+		return forAgentcity;
+	}
+
+
+
+
+	
+	public WebElement getForAgentstate() {
+		return forAgentstate;
+	}
+
+
+
+
+	
+	public WebElement getForAgentproduct() {
+		return forAgentproduct;
+	}
+
+
+
+
+	public WebElement getForAgentothers() {
+		return forAgentothers;
+	}
+
+
+
+	public WebElement getForAgentContactMe() {
+		return forAgentContactMe;
+	}
+
+
+
+
+	public WebElement getCaneng() {
+		return caneng;
+	}
+
+
+
+	
+	public WebElement getContin() {
+		return contin;
+	}
+
+
+
+	
+	public WebElement getCanfran() {
+		return canfran;
+	}
+
+
+
+	
+	public WebElement getUk() {
+		return uk;
+	}
+
+
+
+	
+	public WebElement getUs() {
+		return us;
+	}
+
+
+
 	public WebElement getLoginmess() {
 		return loginmess;
 	}

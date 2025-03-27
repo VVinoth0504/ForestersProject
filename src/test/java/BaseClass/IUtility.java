@@ -36,6 +36,7 @@ public interface IUtility {
 	public List<WebElement> getAllSelectedoption(String x ,WebElement ele);
 	public void ElementToClickable(WebElement ele);
 	public void ElementToPresent(WebElement ele);
+	public  String getText(WebElement ele);
 	
 	
 	
